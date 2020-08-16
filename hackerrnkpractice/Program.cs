@@ -301,7 +301,8 @@ class Solution
 
 }*/
 
-//Day 8:
+//Day 8: Dictionaries and Maps
+
 /*using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Collections;
