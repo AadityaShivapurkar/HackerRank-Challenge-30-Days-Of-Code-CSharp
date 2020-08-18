@@ -394,5 +394,90 @@ class Solution
     }
 }*/
 
+//Day 10: Binary Numbers
+
+/*using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
+using System.Text;
+using System;
+
+class Solution
+{
+
+
+    static void Main(string[] args)
+    {
+        int n = Convert.ToInt32(Console.ReadLine());
+        int max = 0, cur = 0;
+
+        while (n > 0)
+        {
+            cur = (n % 2) > 0 ? cur + 1 : 0;
+            if (cur > max)
+                max = cur;
+            n = n >> 1;
+        }
+
+        Console.WriteLine(max);
+    }
+
+
+}*/
+
+//Day 11: 2D Arrays
+/*using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
+using System.Text;
+using System;
+
+class Solution
+{
+
+
+
+    static void Main(string[] args)
+    {
+        int[][] arr = new int[6][];
+        int r, c;
+        int result = -2147483648;
+        int sum;
+
+        for (int i = 0; i < 6; i++)
+        {
+            arr[i] = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp));
+        }
+
+        for(r=0; r<=3; r++)
+        {
+            for(c=0; c<=3; c++)
+            {
+                sum = arr[r][c] + arr[r][c + 1] + arr[r][c + 2] + arr[r + 1][c + 1] + arr[r + 2][c] + arr[r + 2][c + 1] + arr[r + 2][c + 2];
+                result = Math.Max(result, sum);
+            }
+        }
+        Console.WriteLine(result);
+    
+    }
+}*/
+
+
 
 
